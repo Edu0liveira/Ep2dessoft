@@ -1,11 +1,4 @@
-
-    if orientacao == 'vertical':
-        for i in range:
-            listaretorno[i] = [linha + i , coluna]
-    elif orientacao == 'horizontal':
-        for i in range:
-            listaretorno[i] = [linha , coluna + 1]
-    return listaretornolistazeros = 10*[0]
+listazeros = 10*[0]
 
 grid = 10*[listazeros]
 
