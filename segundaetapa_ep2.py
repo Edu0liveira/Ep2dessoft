@@ -1,37 +1,28 @@
-def preenche_frota (frota, nome, linha, coluna, orientacao, tamanho):
+def preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho):
+    # x é linha e y é coluna
     #frota é um dicionario
-    sublista2 = []
-    lista = []
-    dicionario = {}
 
-    #posicao = [x,y] vertical muda o x e horizontal muda o y,
+    dc_final = {}
+    lista_final = [] # vai pro dc final
+    sublista = [] # vai pra lista_final
 
-    if frota != {}:
-        for e in frota.keys():
-            valor = frota[e]
-            lista.append(valor)
+    for j in frota.keys():
+        if j == nome_navio:
+            valor = frota[j]
+            lista_final.append
 
+    for i in range(0,tamanho):
+        if orientacao == 'vertical':
+            lista_i = [linha+i, coluna]
+            sublista.append(lista_i)
 
-
-    if orientacao == 'vertical':
-        for i in range (0,tamanho):
-            sublista1 = [linha+i,coluna]
-            sublista2.append(sublista1)
-
-
-    if orientacao == 'horizontal':
-        for i in range (0,tamanho):
-            sublista1 = [linha,coluna+i]
-            sublista2.append(sublista1)
-
-    lista.append(sublista2)
-        
-    
-
-    dicionario[nome] = lista
-    return dicionario
+        if orientacao == 'horizontal':
+            lista_i = [linha, coluna+i]
+            sublista.append(lista_i)
 
 
 
+    lista_final.append(sublista)
+    dc_final[nome_navio] = lista_final
 
-
+    return dc_final
