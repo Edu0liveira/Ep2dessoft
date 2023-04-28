@@ -7,7 +7,7 @@ def preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho):
     sublista = [] # vai pra lista_final
 
     for j in frota.keys():
-        if j == nome_navio:
+        if j == nome_navio:         #tenta rodar sem o trecho da linha 9 até 12 pra entender antes
             valor = frota[j]
             lista_final.append
 
