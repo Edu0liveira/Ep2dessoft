@@ -1,5 +1,4 @@
 listazeros = 10*[0]
-
 grid = 10*[listazeros]
 
 def define_posicoes(linha,coluna,orientacao,tamanho):
