@@ -1,5 +1,7 @@
-listazeros = 10*[0]
-grid = 10*[listazeros]
+grid = []
+for i in range(10):
+    linha = [0] * 10
+    grid.append(linha)
 
 def define_posicoes(linha,coluna,orientacao,tamanho):
     listaretorno = tamanho*[0]
