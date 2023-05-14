@@ -18,7 +18,7 @@ def faz_jogada(tabuleiro, linha, coluna):
     lista_esc = tabuleiro[linha]
     casa_esc = lista_esc[coluna]
     if casa_esc == 1:
-        lista_esc[coluna] = 'X'
+        lista_esc[coluna] = 'X' 
     else:
         lista_esc[coluna] = '-'
     return tabuleiro
@@ -124,6 +124,15 @@ while jogando:
     faz_jogada(tabuleiro_oponente, int(linha), int(coluna))
 
     # verifica se o jogador afundou todos os navios do oponente
+
+
+
+    quantidade de navios
+
+
+
+
+
     if afundados(frota_oponente, tabuleiro_oponente) == len(frota_oponente):
         print('Parabéns! Você derrubou todos os navios do seu oponente!')
         jogando = False
